@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+	.nav{
+			border:1px solid #000;
+			height:30px;
+			width:500px;
+			position:relative;
+		} 
+	.nav a{
+			float:left;
+			display:block;
+			width:100px;
+			height:30px;
+			background:#CCC;	
+		}
+	.line{
+			width:100px;
+			position:absolute;
+			left:0;	
+			bottom:0;
+			height:3px;
+			background:#F03;
+		}
+</style>
+<script src="jq/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+<div class="nav">
+	<div class="line"></div>
+	<a> 1</a>
+    <a> 1</a>
+    <a> 1</a>
+    <a> 1</a>
+    <a> 1</a>
+</div>
+</body>
+<script>
+	$(".nav a").hover(function(){
+		console.log($(this).index()-1)
+			$(".line").stop().animate({
+					left:($(this).index()-1) * 100
+				})
+		},function(){
+			
+		})
+</script>
+</html>

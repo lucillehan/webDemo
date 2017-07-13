@@ -1,0 +1,55 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+body{
+		font-family:"微软雅黑";
+	}
+.header{
+		width:1064px;
+		height:92px;
+		background:rgba(255,0,0,.5);
+		margin:0 auto;
+	}
+.banner{
+		width:1343px;
+		height:498px;
+		background:rgba(0,255,0,.5);
+		margin:0 auto;
+		position:relative;
+	}
+.content{
+		height:1153px;
+		width:1064px;
+		margin:0 auto;
+		background:#999;
+	}
+	
+.logo{
+		width:40px;
+		height:92px;
+		background:#030;
+		float:left;
+	}
+.menu{
+		width:585px;
+		height:92px;
+		background:#090;
+		float:right;
+	}
+.text{
+		position:absolute;
+		top:210px;
+		left:500px;
+		text-align:center;
+		
+	}
+.text h1{
+		font-size:40px;
+		font-weight:normal;
+	}
+.text h3{
+		font-size:18px;
+		font-weight:normal;
+	}

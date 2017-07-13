@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>我的照片墙</title>
+<style>
+	*{
+		margin:0;
+		padding:0;	
+	}
+	
+	.box{
+		width:1000px;
+		border:1px solid #000;
+		margin:20px auto;
+	}
+	
+	.header{
+		width:100%;
+		height:80px;
+		border-bottom:1px solid black;
+		text-align:center;
+		font-size:30px;
+		line-height:80px;
+		font-weight:bolder;	/*100~900，bold,bolder*/	
+		background:#FF017E;
+	}
+	
+	.content{
+		width:100%;
+		height:450px;
+		border-bottom:1px solid black;
+		background:	url(./img/bg.jpg) no-repeat;
+		background-size:100% 100%;
+		
+	}
+	
+	.footer{
+		width:100%;
+		height:50px;
+		text-align:center;
+		line-height:50px;
+		font-size:20px;
+		color:lightgray;
+		font-family:"楷体";
+		background:#14A51A;
+	}
+	
+	ul{
+		width:100%;
+		height:40px;
+		border-bottom:1px solid #22AAFE;
+	}
+	
+	ul li{/*包含选择器*/
+		list-style:none;
+		width:141px;
+		height:40px;
+		float:left;
+		text-align:center;
+	}
+	ul li a{
+		display:block;
+		text-decoration:none;
+		width:80%;
+		height:80%;
+		border:1px solid pink;
+		margin: 3px auto;
+		line-height:32px;
+		border-radius:20px;
+		color:#09F;
+		background:#FCF;
+	}
+	ul li a:hover{
+		background:#F9F;
+		font-weight:600;
+		color:#00F;
+	}
+	
+	ul li a:active{
+		color:white;		
+	}
+	
+	.poetry{
+		text-indent:2em;	
+	}
+	
+</style>
+</head>
+
+<body>
+    <!--fscapture(取色器)-->  
+    
+    
+	<div class="box">
+    	<div class="header">lucille	个人网站</div>
+        <div class="content">
+        	<ul>
+            	<li><a href="#">个人中心</a></li>
+                <li><a href="./html/photowall.html">我的相册</a></li>
+                <li><a href="">我的秘密</a></li>
+                <li><a href="">我的爱好</a></li>
+                <li><a href="">音乐收藏</a></li>
+                <li><a href="">个人简历</a></li>
+                <li><a href="">退出系统</a></li>
+            </ul>
+            <p class="poetry">
+            	纳兰性德的最美十首词 
+《木兰花令》  人生若只如初见，何事秋风悲画扇。 等闲变却故人心，却道故人心易变。 骊山语罢清宵半，泪雨霖铃终不怨。 何如薄幸锦衣郎，比翼连枝当日愿。
+            </p>
+            <p>
+            <pre>《采桑子》 
+             谁翻乐府凄凉曲，风也萧萧。
+             雨也萧萧，瘦尽灯花又一宵。 
+             不知何事萦怀抱，醒也无聊。 
+             醉也无聊，梦也何曾到谢桥。</pre>
+             </p>
+             
+             
+        </div>
+        <div class="footer">版权所有，翻版必究	copyright@2016-UI by lucille</div>
+    </div>
+</body>
+</html>

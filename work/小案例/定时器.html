@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<div id="box"></div>
+</body>
+<script>
+	/*var a = 0;
+	var timer = setInterval(function(){
+		a++
+		console.log(a)	
+	},2000)*/
+	
+	
+	
+	function getTime(){
+		var sj = new Date();
+		var str = "";
+		str += sj.getFullYear()+"年"+(sj.getMonth()+1)+"月"+sj.getDate()+"日"+sj.getHours()+"时"+sj.getMinutes()+"分"+sj.getSeconds()+"秒";
+	document.getElementById("box").innerHTML = str;		
+	}
+	
+	var timer1 = setInterval(function(){
+		getTime()	
+	},1000)
+
+</script>
+</html>

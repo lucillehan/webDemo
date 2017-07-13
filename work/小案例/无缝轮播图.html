@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+	*{
+		margin:0;
+		padding:0;		
+	}
+	.box{
+			width:300px;
+			height:500px;
+			border:10px solid #F00;
+			position:relative;
+			margin:20px auto;
+			overflow:hidden;
+		}
+	.imgs{
+			width:1200px;
+			position:absolute;
+		}
+	.imgs li{
+			list-style:none;
+			float:left;
+			width:300px;
+			height:500px;
+		}
+	li img{
+			width:300px;
+			height:500px;
+		}
+	.btns{
+			width:40%;
+			height:20px;
+			position:absolute;
+			border:1px solid #03C;
+			bottom:10%;
+			left:30%;
+		}
+	.btns span{
+			display:inline-block;
+			width:20px;
+			height:20px;
+			border-radius:50%;
+			background: rgba(190,200,160,1);
+		}
+	.btn{
+			position:absolute;
+			top:45%;
+			display:inline-block;
+			width:30px;
+			height:50px;
+			background:rgba(255,56,11,.6);
+			display:none;
+		}
+	.box:hover .btn{
+			display:block;	
+	}
+	.le-btn{
+			left:0;
+		}
+	.ri-btn{
+			right:0;
+		}
+	.btns .active{
+			background:rgba(0,0,0,.5);
+		}
+</style>
+<script src="jq/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+	<div class="box">
+    	<ul class="imgs">
+        	<li><img src="img/1_03.jpg"/></li>
+            <li><img src="img/1_04.jpg"/></li>
+            <li><img src="img/1_05.jpg"/></li>
+            <li><img src="img/1_03.jpg"/></li>
+        </ul>
+        
+        <div class="btns">
+        	<span class="active"></span>
+            <span class=""></span>
+            <span class=""></span>
+        </div>
+        
+        <a class="btn le-btn">《</a>
+        <a class="btn ri-btn">》</a>
+    </div>
+</body>
+
+<script>
+	$(function(){
+			var index = 0;//整个动画的开关
+			var timer;//命名定时器
+			var imgLength = $("ul li").size();//图片的长度
+			
+			autoPlay();//自动播放
+			
+			function autoPlay(){
+					timer = setInterval(function(){
+						//console.log(index)
+							move()
+							index++;
+						},2000)
+			}
+			
+			//左右按钮	
+			$(".le-btn").click(function(){
+				//console.log(1)
+				index--;
+				move();	
+			})
+			
+			$(".ri-btn").click(function(){
+				index++;
+				move()
+				//console.log(index)	
+			})
+			
+			function move(){
+				//图片右边临界点
+				if (index >= imgLength) {
+                        $(".imgs").css({ left: 0 });
+                        index = 1;
+                    }
+				//图片左边临界点
+				if (index <= -1) {
+					$(".imgs").css({ left: -(imgLength - 1) * 300 });
+					index = imgLength - 2;
+				}
+				
+				$(".imgs").stop().animate({
+						left: -index*300
+				})
+					//console.log(index)
+					
+				//设置小圆点样式
+				if(index == imgLength-1){
+					$(".btns span").eq(0).addClass("active").siblings().removeClass("active")		
+				}
+				$(".btns span").eq(index).addClass("active").siblings().removeClass("active")	
+			}
+			
+			//当鼠标放到图片上时，清楚定时器
+			$(".box").hover(function(){clearInterval(timer)},function(){autoPlay()})
+			
+			//点击小按钮显示对应的图片
+			
+			$(".btns span").click(function(){
+				index = $(this).index();
+				move()
+			})
+		})
+</script>
+</html>

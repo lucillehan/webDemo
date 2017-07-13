@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+	*{
+		margin:0;
+		padding:0;	
+	}
+	#div{
+		width:200px;
+		height:200px;
+		background:#999;
+		margin:100px auto;
+		animation: move1 2s ease-in-out infinite alternate;
+		box-shadow:0 0 10px 10px gray;
+		
+		/*ease;ease-in;ease-in-out;linear;cubic-bezier*/ 
+	}
+	
+	/*@keyframes move{
+		from{
+				background:#00C;
+					
+			}
+		to{
+				background:#F00;
+				border-radius:50%;
+		}
+	}*/
+	@keyframes move1{
+			0%{
+				background:red;
+			}
+			30%{
+				background:black;
+				width:300px;
+				animation-dely:4s;
+			}
+			
+			80%{
+				background:green;
+				width:300px;
+				border-radius:50%;
+			}
+			100%{
+				background:radial-gradient(black, blue, #960 , #09F);
+				height:100px;
+				width:100px;
+				box-shadow:20px 10px 10px 10px yellow;
+			}
+			0%{
+				background:linear-gradient(pink, #039, #0C0);	
+			}
+	} 
+	
+	
+	
+</style>
+</head>
+
+<body>
+	<div id="div" class="box"></div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>我的第一个表单</title>
+
+<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	body{
+		background:#eee;
+	}
+	
+	/*大盒子*/
+	.box{
+		width:300px;
+		border:1px solid #000;
+		margin:20px auto;
+		background:#FFF;
+	}
+	label{
+		width:100px;
+		display:inline-block;
+		text-align:right;
+		margin-right:20px;
+	}
+	p{
+		line-height:30px;
+	}
+	.p_in{
+		text-align:center;
+	}
+	.wd160{
+		width:160px;
+	}
+	
+	.in{
+		padding:3px 15px;
+		margin-top:25px;
+	}
+	/*padding，
+	当属性值为1个时：表示上下左右内边距均为10px；
+	
+	当设置的值为2个时：第一个值表示上下内边距，第二左右内边距；
+	
+	当属性值为3个时：第一个表示上内边距，第二个值表示左右内边距，第三个值表示下内边距；
+	
+	当属性值为4个时：第一个值表示上内边距，第二个表示右内边距，第三个值表示下内边距，第四个值表示左内边距；*/
+</style>
+
+</head>
+
+<body>
+	<div class="box">
+    	<form action="">
+        	<p>
+                <label for="email">我的邮箱</label>
+                <input class="wd160" placeholder="请输入邮箱地址" id="email"  type="text"/><!--行内元素-->
+            </p>
+            <p>
+            	<label for="password">我的密码</label>
+                <input class="wd160" id="password" type="text"/>
+            </p>
+            <p>
+            	<label for="makesure">再次输入密码</label>
+                <input class="wd160" id="makesure" type="text"/>
+            </p>
+            <p>
+            	<label for="nickname">昵称</label>
+                <input class="wd160" id="nickname" type="text"/>
+            </p>
+            <p>
+            	<label for="sex">性别</label>
+                <input id="sex" type="radio" name="sex" checked="checked"/>男
+                <input id="sex" name="sex" type="radio"/>女
+            </p>
+            <p>
+            	<label>所在地</label>
+                <select class="wd160">
+                	<option>北京</option>
+                    <option>贵阳</option>
+                    <option>重庆</option>
+                </select>
+            </p>
+            <p>
+                <label for="code">验证码</label>
+                <input class="wd160" id="code" type="text"/>
+            </p>
+            <p class="p_in">
+            	<input class="in" value="立即注册" type="submit"/>
+            </p>
+            
+        </form>
+    </div>
+</body>
+</html>

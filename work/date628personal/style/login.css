@@ -1,0 +1,94 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	
+	}
+.box{
+		border:2px dashed #000;
+		width:90%;
+		height:550px;
+		margin:20px auto;
+		position:relative;
+	}
+.box hr{
+		width:90%;
+		border-color:#0C3;
+		margin:10px auto;	
+	}
+.box h2{
+		text-align:center;
+		padding-top:10px;
+	}
+.left{
+		border:1px solid #CCC;
+		width:55%;
+		height:80%;
+		margin-left:5%;
+	}
+.left img{
+	width:100%;
+	height:100%;
+	}
+.right{
+		border:5px double #000;
+		width:30%;
+		height:80%;
+		position:absolute;
+		right:5%;
+		top:11%;
+	}
+.right form{
+		width:100%;
+		height:100%;
+		padding:30px;
+	}
+.right form p{
+		line-height:50px;
+	}
+.right form p label{
+		display:inline-block;
+		width:100px;
+	}
+.logo{
+		width:50%;
+		height:100px;
+		border:1px solid #999;
+	}
+	
+/*登录按钮样式*/
+.btn{
+		display:inline-block;
+		width:100px;
+		height:30px;
+		font-size:16px;
+		border:1px solid #000;
+		text-align:center;
+		line-height:30px;
+		text-decoration:none;
+		border-radius:20px;
+		background:#09F;
+		color:#FFF;
+	}
+.btn:hover{
+		background:#03F;
+		box-shadow:0 0 5px 3px gray;
+		font-weight:bold;
+	}
+	
+.register:link{
+		color:#FC0;
+	}
+.register:hover{
+		color:#C0C;
+	}
+.register:active{
+		color:#900;
+	}
+.register:visited{
+		color:#0F3;
+	}
+	
+

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title> 搜索框效果 </title>
+<style>
+	.box{
+			border:1px solid #000;
+			width:300px;
+			height:30px;
+			margin:100px auto;
+			position:relative;
+		}
+	.box input{
+			width:250px;
+			height:28px;
+			border:none;
+			padding-left:10px;
+			outline: none;
+		}
+	span{
+			display:inline-block;
+			width:20px;
+			height:20px;
+			position:absolute;
+			top:5px;
+			right:5px;
+		}
+	span img{
+			width:100%;
+			height:100%;
+		}
+</style>
+</head>
+
+<body>
+	<div class="box">
+    	<input type="text" placeholder="请输入..."/>
+        <span><img src="./img/search.png"/></span>
+    </div>
+    <br/>
+    <div style="height:2000px; border:1px solid #009;"></div>
+    <div style="width:100px; height:30px; background:pink; position:fixed; right:10%; bottom:10%;">
+    	返回顶部
+    </div>
+</body>
+</html>

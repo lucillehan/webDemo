@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>无标题文档</title>
+
+<style>
+	label{
+		display:inline-block;
+		width:100px;		
+	}
+</style>
+</head>
+
+<body>
+<form action=""><!-- form表单 -->
+  <label for="username">用户名：</label><input id="username" type="text" placeholder="请输入用户名"/><!-- 文本输入框 -->
+        <br />
+        <label for="password">密码</label>：<input id="password"	type="text"/>
+r	/>
+		<label>性别：</label><input type="radio" name="sex"/>女<!--单选按钮-->
+        	 <input type="radio" name="sex" checked="checked"/>男
+             <br />
+		<label>爱好：</label><input type="checkbox" name="interest"/>唱歌<!-- 多选按钮 -->
+        	 <input type="checkbox" name="interest" />睡觉
+             <input type="checkbox" name="interest" />旅游
+             <input type="checkbox" checked="checked" />               		        	 <br />
+  		<label>工作:</label><input type="checkbox" name="work"/>学习
+        	 <input type="checkbox" name="work"/>家教
+             <br />
+		<label for="intro" class="description">描述：</label><textarea class="desc" id="intro" name="info" cols="10" rows="3"></textarea>
+       		 <br/>
+        下拉列表：<select name="sele">
+       				<option>选项1</option>
+                    <option>选项2</option>
+                    <option>选项2</option>
+                    <option>选项3</option>
+       			</select>
+       		<br/>
+  			<input type="submit" value="注册"/>
+            <input type="reset" value="重置"/>
+            <input type="button" value="普通按钮"/>
+       
+</form>
+</body>
+</html>

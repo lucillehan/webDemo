@@ -1,0 +1,27 @@
+*{
+	margin:0;
+	padding:0;
+}	
+	@media screen and (min-width: 0px){
+			
+			.box{
+					height:300px;
+					background:green;	
+				}	
+		}
+	@media screen and (min-width: 640px){
+		
+		.box{
+				height:300px;
+				background:red;	
+			}	
+	}
+	
+	
+	@media screen and (min-width:1200px){
+		
+		.box{
+				height:200px;
+				background:blue;	
+			}	
+	}

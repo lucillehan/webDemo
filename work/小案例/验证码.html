@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+	#yzm{
+		display:inline-block;
+		width:100px;
+		height:30px;
+		text-align:center;
+		line-height:30px;
+		background:#CCC;
+		color:white;
+	}
+	
+</style>
+</head>
+
+<body>
+	<span id="yzm">1234</span>
+    <button id="btn" onclick="">点击换</button>
+</body>
+<script>
+	document.getElementById("btn").onclick = function(){
+		//console.log(1);	
+		var a = "";
+		for(var i = 0 ; i < 4; i++){
+			var b = Math.round(Math.random()*9)
+			//console.log(b)
+			a += b;	
+			
+		}
+		//console.log(a)
+		document.getElementById("yzm").innerHTML = a;
+	}
+	
+</script>
+</html>

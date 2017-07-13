@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>canvas画圆</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin:0;
+
+		}
+		.box{
+			width:50%;
+			margin:100px auto;
+		}
+		#can{
+			border: 1px solid #ddd;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<canvas width="400" height="400" id="can"></canvas>
+	</div>
+</body>
+<script type="text/javascript">
+	var dom = document.getElementById("can");
+	var ctx = dom.getContext('2d');
+	var width = ctx.canvas.width;
+	var r = width / 2 - 5;
+	
+	function drawCircle(){
+		ctx.translate(r + 5,r + 5);//将原点移至正方形的中心
+		ctx.beginPath();//定义开始路径
+		ctx.lineWidth = 10;//定义线条的宽度
+		ctx.arc( 0 , 0 , r , 0 , 2*Math.PI , false);
+		ctx.stroke();//线条填充
+	}
+
+	function drawTrangle(){
+		ctx.translate(-r - 5,-r - 5);
+		ctx.lineWidth = 5;
+		ctx.beginPath();
+		ctx.moveTo(200 , 0);
+		ctx.lineTo(400 , 200);
+		ctx.lineTo(200 , 400);
+		ctx.lineTo(0 , 200);
+		ctx.lineTo(200 , 0);
+		ctx.stroke();
+	}
+
+
+	drawCircle();
+	drawTrangle()
+</script>
+</html>

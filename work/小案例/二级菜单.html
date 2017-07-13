@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+	*{
+		margin:0;
+		padding:0;	
+	}
+	.ul{
+		width:500px;
+		height:30px;
+		border-bottom:1px solid #000;
+		margin:20px auto;
+	}
+	li{
+		list-style:none;	
+	}
+	.ul .li{
+		width:100px;
+		height:30px;
+		float:left;
+		border-right:1px solid #333;
+		background:#CFF;
+		position:relative;	
+	}
+	.ul .li:hover .a{
+		background:#C69;
+		font-weight:600;
+		color:#FFF;
+	}
+	.ul .li .a{
+		text-decoration:none;
+		color:#0C9;
+		display:block;
+		width:100%;
+		height:100%;
+		text-align:center;
+		line-height:30px;
+	}
+	.items{
+		width:100px;
+		background:#CCC;
+		position:absolute;
+		top:30px;
+		left:0;
+		display:none;	
+	}
+	.li:hover .items{
+		display:block;
+	} 
+	.items li{
+		height:30px;
+		line-height:30px;	
+	}
+	.items li a{
+		display:block;
+		height:100%;
+		width:100%;	
+		line-height:30px;	
+		text-align:center;
+	}
+	.items li a:hover{
+		background:#F63;
+		color:#FFF;	
+	}
+	
+</style>
+</head>
+
+<body>
+<ul class="ul">
+	<li class="li">
+    	<a class="a">首页</a>
+        <ul class="items">
+        	<li><a>关于我们</a></li>
+            <li><a>联系方式</a></li>
+            <li><a>公司管理</a></li>
+        </ul>
+    </li>
+    
+    <li class="li">
+    	<a class="a">家居</a>
+        <ul class="items">
+        	<li><a>关于我们</a></li>
+            <li><a>联系方式</a></li>
+            <li><a>公司管理</a></li>
+        </ul>
+    </li>
+    
+    <li class="li">
+    	<a class="a">服装</a>
+        <ul class="items">
+        	<li><a>关于我们</a></li>
+            <li><a>联系方式</a></li>
+            <li><a>公司管理</a></li>
+        </ul>
+    </li>
+    <li class="li">
+    	<a class="a">首页</a>
+        <ul class="items">
+        	<li><a>关于我们</a></li>
+            <li><a>联系方式</a></li>
+            <li><a>公司管理</a></li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>

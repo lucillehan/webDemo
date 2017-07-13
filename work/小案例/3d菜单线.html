@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+	.nav{
+			border:1px solid #000;
+			height:30px;
+			width:500px;
+			
+		} 
+	.nav a{
+			float:left;
+			display:block;
+			width:100px;
+			height:30px;
+			background:#CCC;
+			position:relative;	
+		}
+	.line{
+			width:100px;
+			position:absolute;
+			left:0;	
+			bottom:0;
+			height:3px;
+			background:#F03;
+			
+			transform:rotateY(90deg)
+		}
+	.nav a:hover .line{
+			transition:all 2s;
+			display:block;
+			transform-origin:center;
+			transform:rotateY(0deg)
+		}
+</style>
+
+<!--解释3dhttp://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/-->
+</head>
+
+<body>
+	<div class="nav">
+	<a> 1<div class="line"></div></a>
+    <a> 1<div class="line"></div></a>
+    <a> 1<div class="line"></div></a>
+    <a> 1<div class="line"></div></a>
+    <a> 1<div class="line"></div></a>
+</div>
+</body>
+</html>

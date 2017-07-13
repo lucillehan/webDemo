@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+	.btn{
+			width:100px;
+			height:30px;
+			background:#CFF;	
+		}
+		.box{
+				width:300px;
+				height:200px;
+				background:#66C;
+			}
+</style>
+<script src="jq/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+<div class="btn">点击</div>
+<div class="box">你好</div>
+</body>
+<script>
+	$(".btn").click(function(){
+		//$(".box").slideToggle()
+		$(".box").show()	
+	})
+</script>
+</html>

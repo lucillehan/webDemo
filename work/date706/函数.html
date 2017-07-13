@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+</body>
+<script>
+	function fn(){
+		//函数体	
+		//1,打印100个1
+		for(var i = 0 ; i < 100 ;i++ ){
+			document.write(1)	
+		}
+	}
+	
+	fn();//函数的调用
+	
+	
+	
+	//2,弹出hello word;
+	
+	
+	function hello(){
+		//alert("hello word")	
+	}
+	
+	hello();
+	
+	
+	//3,实现计算器功能+ -  *   
+	
+	var sum;//和
+	var cha;//差
+	var ji;//积
+	var shang;//商
+	
+	function caculate(x,y){//x,y是形参
+		sum = x+y;
+		cha = x-y;
+		ji  = x*y;
+		shang = x/y;
+		console.log("和："+sum)
+		console.log("差："+cha)
+		console.log("积："+ji)
+		console.log("商："+shang)
+	}
+	caculate(8,3);//实参
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//var x = Math.round(Math.random()*10);
+	//console.log(x)
+	
+	
+	
+	
+</script>
+</html>

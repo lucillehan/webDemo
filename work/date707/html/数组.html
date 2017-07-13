@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+	#btn{
+			width:100px;
+			height:50px;
+			background:#000;
+			text-align:center;
+			line-height:50px;
+			color:#FFF;	
+		}
+</style>
+</head>
+
+<body>
+<div id="btn" class="box">1252</div>
+</body>
+<script>
+	//数组
+	//数组的下标：a[0]   =    1;      a[2]   =   2;
+	
+	/*var a = [1,4,2];
+	
+	
+	
+	//数组遍历
+	for(var i = 0 ; i < a.length ; i++){
+		document.write(a[i])	
+	}*/
+	
+	//var a = new Array();
+	
+	//js事件驱动
+	//点击事件：onclick
+	//鼠标双击事件：ondblclick
+	//鼠标移入事件:onmouseenter onmouseover
+	//鼠标移出事件:onmouseleave onmouseout
+	//页面加载：onload
+	
+	document.getElementById("btn").onclick = function(){//方法体
+		//alert(1)
+		var a = "";//显示到页面上的数值；
+		for(var i = 0 ; i < 4 ; i++){
+			var b;//存储每次产生的个位数
+			b = Math.round(Math.random()*9);//产生0-9之间的个位数
+			a += b;	//把产生的随机数拼接起来
+		}
+		document.getElementById("btn").innerHTML = a;
+	}
+	
+	window.onload = function(){
+		alert(1);
+	}
+	
+	//随机数，范围是0-1;
+	//var a;
+	//a = Math.round(Math.random()*9);
+	//document.write(a);
+	
+	//四舍五入Math.round()
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//confirm("你是不是傻瓜")
+	
+	//var i = confirm("你是不是傻");
+	//if(i){
+	//	document.write("我也觉得");	
+	//}
+	//else{
+	//	document.write("说谎");	
+	//}
+	//prompt("请输入，你很傻")
+</script>
+</html>

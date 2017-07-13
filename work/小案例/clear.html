@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+	.box{
+			width:100px;
+			height:100px;
+			border:1px solid #000;
+			position:relative;
+			top:10px;
+			left:20px;
+		}
+	.div{	
+			height:auto;	
+			position:relative;
+			border:1px solid #F00;
+		}
+	.div:after{
+			content:'';
+			clear:both;
+			overflow:hidden;
+			height:0px;
+			*zoom:1;
+		}
+	
+</style>
+</head>
+
+<body>
+<div class="div" id="box">
+
+	<div class="box box1" id="son">
+    	
+    </div>
+    <div class="box">
+    	
+    </div>
+    <div class="box">
+    	
+    </div>
+
+</div>
+</body>
+<script>
+	
+</script>
+</html>
